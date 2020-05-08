@@ -1,0 +1,60 @@
+{
+  "name": "fed-e-readme",
+  "version": "0.1.0",
+  "description": "Front-end development enhanced course notes by LagouEdu",
+  "keywords": [
+    "Courses",
+    "Tutorials",
+    "LagouEdu",
+    "Front-end"
+  ],
+  "homepage": "https://github.com/zce/fed-e-readme#readme",
+  "bugs": {
+    "url": "https://github.com/zce/fed-e-readme/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zce/fed-e-readme.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "zce",
+    "email": "w@zce.me",
+    "url": "https://zce.me"
+  },
+  "scripts": {
+    "format": "prettier --write **/*.md",
+    "commit": "git-cz"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "*.md": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "latest",
+    "@commitlint/config-conventional": "latest",
+    "commitizen": "latest",
+    "cz-conventional-changelog": "latest",
+    "husky": "latest",
+    "lint-staged": "latest",
+    "prettier": "latest"
+  }
+}
