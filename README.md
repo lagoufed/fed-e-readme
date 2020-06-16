@@ -30,7 +30,7 @@
 - 浏览器
   - 推荐你使用 [Chrome](https://www.google.com/chrome/) 或者[基于 Chromium 的 Edge](https://www.microsoft.com/zh-cn/edge)
 - Node.js 环境
-  - 推荐安装最新 LTS 版本，截至目前，最新的 LTS 版本是 [v12.16.3](https://nodejs.org/dist/v12.16.3/)
+  - 推荐安装最新 LTS 版本，截至目前，最新的 LTS 版本是 [v12.18.0](https://nodejs.org/dist/v12.18.0/)
 
 ### 知识储备
 
